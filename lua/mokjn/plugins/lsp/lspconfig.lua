@@ -85,6 +85,9 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+			["zls"] = function()
+				lspconfig["zls"].setup({})
+			end,
 			["rust_analyzer"] = function()
 				-- configure rust server
 				lspconfig["rust_analyzer"].setup({
